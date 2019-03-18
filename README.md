@@ -2,7 +2,7 @@ vue-znl-ui
 
 ## 正能量vue组件库
 
-**查看完整文档**[查看文档](https://vitozyf.github.io/vue-znl-ui/)
+**查看完整文档**[查看文档](https://vitozyf.github.io/vue-znl-ui/index.html#/zh-CN/component/quickstart)
 
 ### 完整引入
 
