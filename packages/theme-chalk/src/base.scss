@@ -1,0 +1,106 @@
+.baseStyleDefalut{
+  &:focus{
+    outline: none!important;
+  }
+
+  &.base-flex-grid {
+    position: relative;
+    // 页码提示
+    >.footer{
+      display: flex;
+      align-items: center;
+      height: 32px;
+      justify-content: flex-end;
+      .cancelAllChecked{
+        float:left;
+        padding:0px;
+        margin-left:20px;
+        .el-button{
+          border: 1px solid #dfe2e5;
+          padding: 7px 16px;
+          background-color: #fff;
+          color: #999;
+          border-radius: 4px;
+          height: 30px;
+          &:hover{
+            background-color: #FFF7E7 !important;
+          }
+        }
+      }
+    }
+    }
+  // 编辑input
+  .dblClickInputStyleAll{
+    position: absolute;
+    z-index: 9999;
+    height: 25px;
+    border: none;
+    top:0;
+    left:0;
+    font-size: 12px;
+    padding: 0 3px!important;
+    &:focus{
+      outline: none;
+    }
+  }
+
+  // 列表
+  .el-table.el-table--striped{
+    // 表头
+    thead{
+      tr{
+        // &.searchInp{
+        //   display: none;
+        // }
+        &:nth-child(2) th{
+          border: none;
+          .cell{
+            background-color:#f5f5f5;
+            color: #1A1A1A;
+          }
+        } 
+      }
+    }
+    .el-table__body{
+      tr.el-table__row--striped{
+        td{
+          background-color: #F5F5F5;
+        }
+      }
+      tr{
+        td{
+          border: none!important;
+          .cell{
+            height: 24px!important;
+            &>div{
+              line-height: 24px;
+              padding: 0 5px!important;
+            }
+          }
+        }
+      } 
+    }
+  } 
+}
+
+
+
+.znl-errDataType{
+color: #ED1C24!important;
+font-weight: 800;
+}
+body .el-tooltip__popper{
+  background-color: #fff!important;
+  border-radius: 2px!important;
+  color:#333!important;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2)!important;
+  border-color: #E6E6E6!important;
+  max-width: 960px!important;
+}
+body .el-tooltip__popper.znl-tip-hide{
+  display: none!important;
+}
+
+body .el-dropdown-menu{
+  transition: none;
+}

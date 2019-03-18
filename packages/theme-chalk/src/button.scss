@@ -1,0 +1,366 @@
+.znl-button{
+  // 通用
+  display: inline-block;
+  position: relative;
+  font-size: 0px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0 5px;
+  text-align: center;
+  cursor: pointer;
+
+  .iconfont{
+    font-size: 12px;
+  }
+
+  // 下拉框
+  .wj-right-menu{
+    padding: 2px 0;
+    margin-top: 0;
+    li span{
+      padding: 0 0px 0 10px;
+    }
+  }
+
+  .icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 12px;
+    .iconfont{
+      background-color: #fff;
+      color: #ccc;
+      border-bottom-right-radius: 4px!important;
+      border-top-right-radius: 4px!important;
+    }
+  }
+
+  .button{
+    font-size: 12px;
+    box-sizing: border-box;
+    white-space: nowrap;
+  }
+
+  // 默认
+  &.default{
+    border: 1px solid #CED0DA;
+    background-color: #fff;
+    .button{
+      color: #333;
+      button{
+        border: none!important;
+      }
+      .iconfont{
+        color: #333;
+        font-size: 12px;
+      }
+      .icon{
+        .iconfont{
+          color: #333;
+        }
+      }
+    }
+    &:hover{
+      background-color: #E6E6E6;
+    }
+  }
+
+  // 主按钮
+  &.main{
+    border: 1px solid #ED9E00;
+    background-color: #ED9E00;
+    color: #fff;
+    &:hover{
+      background-color: #EE7700;
+    }
+    .icon{
+      .iconfont{
+        color: #fff;
+      }
+    }
+    .znl-button-menu{
+      background-color: #ED9E00;
+      color: #fff;
+      &:hover{
+        background-color: #EE7700;
+      }
+      &.menu-disabled{
+        color: #FFE173;
+        &:hover{
+          background-color: #ED9E00;
+        }
+      }
+    }
+  }
+
+  // 次要按钮
+  &.minor{
+    border: 1px solid #ED9E00;
+    background-color: #FFE4D0;
+    color: #EE7700;
+    &:hover{
+      background-color: #FFE174;
+    }
+    .icon{
+      .iconfont{
+        color: #EE7700;
+      }
+    }
+    .znl-button-menu{
+      background-color: #FFE4D0;
+      color: #EE7700;
+      &:hover{
+        background-color: #FFE174;
+      }
+      &.menu-disabled{
+        color: #FFA866;
+        &:hover{
+          background-color: #FFE4D0;
+        }
+      }
+    }
+  }
+
+  // 信息按钮
+
+  &.info{
+    border: 1px solid #AAA;
+    background-color: #BBB;
+    color: #333;
+    .icon{
+      .iconfont{
+         color: #333;
+      }
+    }
+    &:hover{
+      background-color: #FFDD99;
+    }
+    .znl-button-menu{
+      background-color: #BBB;
+      &:hover{
+        background-color: #FFDD99;
+      }
+      &.menu-disabled{
+        color: #999;
+        &:hover{
+          background-color: #BBB;
+        }
+      }
+    }
+  }
+
+  // mac按钮
+  &.mac{
+    border: 1px solid rgba(0,0,0,.1);
+    background: linear-gradient(180deg,rgba(254,254,254,1),rgba(243,243,243,1));
+    box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.15);
+    border-radius: 2px; 
+    color: #000;
+    .icon{
+      .iconfont{
+          color: #000;
+      }
+    }
+    &:hover{
+      box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.5) 
+    }
+    .znl-button-menu{
+      background: linear-gradient(180deg,rgba(254,254,254,1),rgba(243,243,243,1));
+      &:first-child{
+        border-bottom-left-radius: 2px;
+        border-top-left-radius: 2px;
+      }
+      &:last-child{
+        border-bottom-right-radius: 2px;
+        border-top-right-radius: 2px;
+      }
+      &:hover{
+        background: #FFDD99;
+      }
+      &.menu-disabled{
+        color: #999;
+        &:hover{
+          background: linear-gradient(180deg,rgba(254,254,254,1),rgba(243,243,243,1));
+        }
+      }
+    }
+  }
+
+  // link按钮
+  &.link{
+    border: 1px solid #F1AE9C;
+    background-color: #EE7700;
+    color: #fff;
+    &:hover{
+      background-color: #E67300;
+    }
+    .icon{
+      .iconfont{
+        color: #fff;
+      }
+    }
+    .znl-button-menu{
+      background-color: #EE7700;
+      color: #fff;
+      &:hover{
+        background-color: #E67300;
+      }
+      &.menu-disabled{
+        background-color: #F1AE9C;
+        &:hover{
+          background-color: #F1AE9C;
+        }
+      }
+    }
+  }
+}
+// 下拉按钮
+.znl-btn-select{
+  .button{
+    button{
+      border-radius: 0!important;
+      border-bottom-left-radius: 4px!important;
+      border-top-left-radius: 4px!important;
+      height: 22px!important;
+    }
+  }
+  .icon{
+    .iconfont{
+      background-color: transparent;
+    }
+  }
+}
+// 选择列表
+.znl-button-wrapper{
+  &.wj-right-menu{
+    .menu-item{
+      color: #333;
+      padding: 0 5px 0 10px;
+      text-align: left;
+    }
+  }
+}
+// 倒计时按钮
+.znl-btn-countdown{
+  .button{
+    text-align: center;
+  }
+  &.timekeeping{
+    cursor: no-drop;
+    border: 1px solid #CCCCCC;
+    background-color: #ccc;
+    color: #fff;
+    .button{
+      color: #fff;
+    }
+    &:hover{
+      border: 1px solid #CCCCCC;
+      background-color: #ccc;
+      color: #fff;
+    }
+  }
+}
+  // 文本按钮
+.znl-btn-text{
+  &.default{
+    border: none;
+    .button{
+      border: none;
+      color: #2288CC;
+      text-decoration: underline;
+      .iconfont{
+        color: #2288CC;        
+      }
+    }
+    &:hover{
+      background-color: transparent;
+    }
+  }
+}
+
+// 禁用按钮
+.znl-button_disabled{
+  cursor: no-drop;
+  &.default, &.default .button{
+    color: #CCCCCC;
+    .iconfont{
+      color: #CCCCCC;
+    }
+    &:hover{
+      background-color: #fff;
+    }
+  }
+  &.main{
+    color: #FFE173;
+    &:hover{
+      background-color: #ED9E00;
+    }
+  }
+  &.minor{
+    color: #FFA866;
+    &:hover{
+      background-color: #FFE4D0;
+    }
+  }
+  &.info{
+     color: #999;
+    &:hover{
+      background-color: #BBB;
+    }
+    .icon .iconfont{
+      color: #999;
+    }
+    .znl-button-menu{
+      &:hover{
+        background-color: #BBB;
+      }
+      &.menu-disabled{
+        &:hover{
+          background-color: #BBB;
+        }
+      }
+    }
+  }
+  // mac按钮
+  &.mac{
+    border-radius: 2px; 
+    color: #999;
+    .icon{
+      .iconfont{
+          color: #999;
+      }
+    }
+    &:hover{
+      box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.15);
+    }
+    .znl-button-menu{
+      background: linear-gradient(180deg,rgba(254,254,254,1),rgba(243,243,243,1));
+      &:hover{
+        background: linear-gradient(180deg,rgba(254,254,254,1),rgba(243,243,243,1));
+      }
+      &.menu-disabled{
+        color: #999;
+        &:hover{
+          background: linear-gradient(180deg,rgba(254,254,254,1),rgba(243,243,243,1));
+        }
+      }
+    }
+  }
+  &.link{
+    color: #FFEFEB;
+    background-color: #F1AE9C;
+    border-color: #F1AE9C;
+    &:hover{
+      background-color: #F1AE9C;
+    }
+  }
+}
+
+//多段按钮
+.znl-btn-multiple{
+  .znl-button-menu{
+    &:hover{
+      background-color: #E6E6E6;
+    }
+  }
+}

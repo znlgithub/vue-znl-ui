@@ -1,0 +1,167 @@
+.znl-tree{
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  position: relative;
+  overflow-x: auto;
+  overflow-y: auto;
+  background-color: #fff;
+  li{
+    display: block;
+  }
+  .iconfont{
+    font-size: 14px;
+  }
+  // 打开闭合箭头
+  .icon-arrow-drop-updown{
+    font-weight: 900;
+    font-size: 12px;
+    position: absolute;
+    top: 0px;
+    left: 3px;
+    height: 25px;
+    line-height: 25px;
+  }
+  // 行
+  .tree-row{
+    position: relative;
+    line-height: 27px;
+    padding-left: 15px;
+   
+  }
+  // 文件名
+  .folder-name{
+    display: block;
+    width: 100%;
+    position: relative;
+    height: 27px;
+    line-height: 27px;
+    // overflow: hidden;
+    // text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-right: 15px;
+    box-sizing: border-box;
+    &:hover{
+      background-color: #F2F2F2;
+    }
+    &.active{
+      background-color: #C8E0F0;
+      .folder-option-icon{
+        display: block;
+      }
+      .itemname{
+        background-color: #C8E0F0;
+      }
+    }
+    .itemname{
+      display: inline-block;
+    }
+    .folder-svg{
+      width: 16px;
+      height: 16px;
+      position: relative;
+      top: 3px;
+    }
+    .folder-option-icon{
+      position: absolute;
+      top: 0;
+      right: 0px;
+      display: none;
+      cursor: pointer;
+      width: 20px;
+      text-align: center;
+      background-color: #C8E0F0;
+    }
+  }
+  .znl-tree-editfolder, .znl-tree-confirm_box{
+    position: fixed;
+    border: 1px solid #E6E6E6;
+    width: 60px;
+    background-color: #fff;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 3px 3px 5px #ccc;
+    z-index: 100;
+    .item{
+      padding: 0px 10px;
+      line-height: 25px;
+      box-sizing: border-box;
+      border-bottom: 1px solid #E6E6E6;
+      cursor: pointer;
+      text-align: center;
+      &:hover{
+        background-color: #f2f2f2;
+      }
+    }
+  }
+  .znl-tree-confirm_box{
+    width: 200px;
+    .header, .item{
+      line-height: 25px;
+      padding: 0px 10px;
+    }
+    .item{
+      border-top: 1px solid #E6E6E6;
+      border-bottom: none;
+      &.confirm-box{
+        display: flex;
+        span{
+          display: inline-block;
+          width: 50%;
+          &:hover{
+            background-color: #f2f2f2;
+          }
+        }
+        &:hover{
+          background-color: transparent;
+        }
+      }
+    }
+  }
+  // 编辑框
+  .name_edit_input{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 27px;
+    border: 1px solid #E6E6E6;
+    box-sizing: border-box;
+    width: 200%;
+    outline: none;
+    font-size: 12px;
+    padding-left: 5px;
+  }
+  // 新增
+  .add-folder{
+    width: 100%;
+    height: 100%;
+    // background-color: rgba(0,0,0,.1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    .addFolderInput{
+      width: 100%;
+      box-sizing: border-box;
+      height: 30px;
+      line-height: 30px;
+      font-size: 12px;
+      outline: none;
+      padding-left: 3px;
+    }
+  }
+  // .sortable-drag,
+  .sortable-ghost{
+    width: 100%;
+    height: 0px;
+    margin: 0 auto;
+    overflow: hidden;
+    // border: 1px solid #ee7700;
+    background-color: #fff;
+    div{
+      display: none;
+    }
+  }
+}

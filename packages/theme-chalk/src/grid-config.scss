@@ -1,0 +1,248 @@
+.znl-gridconfig {
+  margin: 0!important;
+  width: 50%;
+  top: 50%!important;
+  left: 50%!important;
+  transform: translateX(-50%) translateY(-50%)!important;
+  position: absolute;
+  .el-dialog__header {
+    position: relative;
+    height: 24px;
+    .el-dialog__title {
+      position: absolute;
+      left: 15px;
+    }
+  }
+  .el-dialog__body {
+    padding: 5px 15px;
+    height: 410px;
+    .el-tabs__content{
+      .el-table{
+        .znl-parameterConfig{
+          font-size: 12px;
+          .el-radio__input.is-checked .el-radio__inner{
+            border-color: #ee7700;
+            background: #ee7700;
+          }
+        }
+      }
+    }
+    .el-table {
+      .el-table__header-wrapper {
+        .el-table__header {
+          tr th {
+            height: 25px;
+          }
+        }
+      }
+      .el-table__body-wrapper {
+          .el-table__body {
+              tr {
+                  td {
+                      &.el-table__expanded-cell {
+                          padding: 0 50px 10px;
+                          .el-tabs__header {
+                              .el-tabs__item {
+                                  &.is-active {
+                                      color: #ff7700;
+                                  }
+                              }
+                              .el-tabs__active-bar {
+                                  background-color: #ff7700;
+                              }
+                          }
+                          .el-tabs__content {
+                              .el-tab-pane {
+                                  .el-input__inner {
+                                      height: 30px;
+                                  }
+                                  .el-color-picker {
+                                      .el-color-picker__trigger {
+                                          height: 30px;
+                                          padding: 0px 6px;
+                                          display: flex;
+                                          align-items: center;
+                                      }
+                                  }
+                                  // .el-row {
+                                  //     margin-bottom: 5px;
+                                  // }
+                                  a {
+                                      color: #ff7700;
+                                  }
+                              }
+                          }
+                      }
+                      .cell {
+                          line-height: 40px;
+                          height: 40px;
+                          display: flex;
+                          align-items: center;
+                          a {
+                              color: #B3B3B3;
+                              text-decoration: none;
+                              font-weight: 900;
+                              font-size: 18px;
+                              &:first-child{
+                                margin-right: 5px;
+                              }
+                              &.invisible {
+                                  visibility: hidden;
+                              }
+                              &:hover {
+                                  color: #FF7700;
+                              }
+                          }
+                          .el-switch {
+                              &.is-checked {
+                                  .el-switch__core {
+                                      border-color: #FF7700;
+                                      background-color: #FF7700;
+                                  }
+                              }
+                          }
+                          .el-input {
+                              height: 40px;
+                              .el-input__inner {
+                                  height: 28px;
+                                  &:focus {
+                                      border: 1px solid #FF7700;
+                                  }
+                              }
+                          }
+                      }
+                      &.auth-column {
+                          background-color: #EFF3F6;
+                          padding: 2px;
+                          .el-checkbox__input.is-checked .el-checkbox__inner {
+                              background-color: #ff7700;
+                              border-color: #ff7700;
+                          }
+                          .el-checkbox__input.is-focus .el-checkbox__inner {
+                              border-color: #ff7700;
+                          }
+                          &>.el-checkbox {
+                              display: flex;
+                              width: 100%;
+                              margin-bottom: 5px;
+                          }
+                          &>.el-checkbox-group {
+                            display: flex;
+                            flex-wrap: wrap;
+                            .el-checkbox{
+                              width: 100px;
+                              margin-left: 0px;
+                            }
+                          }
+                      }
+                  }
+              }
+          }
+      }
+    }
+  }
+  .el-dialog__footer {
+    .pull-left {
+      float: left;
+      display: flex;
+      align-items: center;
+      position: relative;
+      top: 3px;
+      span {
+        font-size: 14px;
+      }
+      .el-input-number__decrease,
+      .el-input-number__increase {
+        line-height: 23px;
+      }
+      .el-input {
+        .el-input__inner {
+          height: 25px;
+        }
+      }
+    }
+    .el-button {
+        &.el-button--primary {
+            background-color: #ff7700;
+            border: 1px solid #ff7700;
+        }
+        &.btn-reset {              
+            color: #ff7700;
+        }
+    }
+  }
+  .el-tabs__header{
+    margin: 0;
+  }
+  .el-table__header{
+    margin: 0;
+    thead tr{
+      height: 30px;
+      th, th>div{
+        background-color: #525A66;
+        color: #FFFFFF;
+        font-weight: 600;
+      }
+    }
+  }
+  .el-tabs__item.is-active{
+    color: #ff7700;
+  }
+  .el-tabs--card > .el-tabs__header .el-tabs__item.is-active{
+    box-shadow: none;
+  }
+  .el-table__body-wrapper{
+    overflow-y: auto; 
+  }
+  .el-table__expand-icon{
+    width: 100%;
+    transition: none;
+  }
+  .el-checkbox+.el-checkbox{
+    margin-left: 0;
+  }
+  .el-checkbox{
+    margin-right: 20px;
+  }
+  .el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner{
+    background-color: #ee7700;
+    border-color: #ee7700;
+  }
+  .el-checkbox__input.is-checked + .el-checkbox__label{
+    color: #666;
+  }
+  .el-color-picker__icon {
+      margin-left: 0;
+      transform: translateX(-50%) translateY(-50%);
+  }
+  .znl-parameterConfig{
+    .el-input__inner{
+      border: 1px solid #ccc;
+    }
+  }
+  #tab-parameterConfig, #tab-columnConfog{
+    font-size: 100;
+    &:hover{
+      color: #666;
+    }
+    &.is-active{
+      color: #ee7700;
+    }
+  }
+  .el-table .cell{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .znl-dragging-cell{
+    width: 100%;
+    height: 100%;
+  }
+  .el-table__row{
+    cursor: pointer;
+  }
+  #cloneNodeRow{
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}

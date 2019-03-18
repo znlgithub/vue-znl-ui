@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#ADADAD;}
+	.st1{fill:#FAFAFA;}
+</style>
+<title>admin_file_ic</title>
+<desc>Created with Sketch.</desc>
+<g id="ERP-StyleGuide" transform="translate(-415.000000, -1530.000000)">
+	<g id="文件ic" transform="translate(415.000000, 1530.000000)">
+		<g id="文件" transform="translate(2.000000, 2.000000)">
+			<path id="Shape" class="st0" d="M1,0C0.4,0,0,0.4,0,1v10c0,0.5,0.4,1,1,1h10c0.5,0,1-0.4,1-1V3L9.2,0H1z"/>
+			<path id="Path" class="st1" d="M11.2,11c0,0.1-0.1,0.2-0.2,0.2H1c-0.1,0-0.2-0.1-0.2-0.2V1c0-0.1,0.1-0.2,0.2-0.2h7.6v2.4
+				c0,0.2,0.2,0.4,0.4,0.4h2.2V11z"/>
+			<polygon id="Path_1_" class="st1" points="9.4,1.5 10.6,2.8 9.4,2.8 			"/>
+		</g>
+	</g>
+</g>
+</svg>

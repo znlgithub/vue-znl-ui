@@ -1,0 +1,22 @@
+.znl-griddialog {
+    .el-dialog__header {
+        padding: 10px 15px 30px;
+    }
+    .el-dialog__body {
+        padding: 30px 15px;
+    }
+    .el-dialog__footer {
+        padding: 0px 15px 15px;
+        .footer {
+            .znl-btn-confirm {
+                background-color: #ED9E00;
+                border-color: #ED9E00;
+                color: #fff;
+                &:hover {
+                    background-color: #ee7700;
+                    border-color: #ee7700;
+                }
+            }
+        }
+    }
+}

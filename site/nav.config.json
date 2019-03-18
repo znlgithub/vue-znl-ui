@@ -1,0 +1,172 @@
+{
+  "zh-CN": [
+    {
+      "name": "更新日志",
+      "path": "/changelog"
+    },
+    {
+      "name": "开发指南",
+      "children": [ 
+        {
+          "path": "/quickstart",
+          "name": "快速上手"
+        }
+      ]
+    },
+    {
+      "name": "组件",
+      "groups": [
+        {
+          "groupName": "layout",
+          "list": [
+            {
+              "path": "/multiples",
+              "title": "multiples 多行布局"
+            },
+            {
+              "path": "/spa",
+              "title": "spa 单页面布局"
+            },
+            {
+              "path": "/topBottom",
+              "title": "topBottom 上下布局"
+            },
+            {
+              "path": "/leftRight",
+              "title": "leftRight 多行布局"
+            }
+          ]
+        },
+        {
+          "groupName": "Basic",
+          "list": [
+            {
+              "path": "/button",
+              "title": "Button 按钮"
+            }
+          ]
+        },
+        {
+          "groupName": "Form",
+          "list": [
+            {
+              "path": "/input",
+              "title": "Input 输入框"
+            },
+            {
+              "path": "/upload",
+              "title": "Upload 上传"
+            }
+          ]
+        },
+        {
+          "groupName": "Data",
+          "list": [
+            {
+              "path": "/znltable",
+              "title": "Table 表格"
+            },
+            {
+              "path": "/tree",
+              "title": "Tree 文件树"
+            },
+            {
+              "path": "/lists",
+              "title": "Lists 数据列表"
+            }
+          ]
+        },
+        {
+          "groupName": "Navigation",
+          "list": [
+            {
+              "path": "/steps",
+              "title": "Steps 步骤条"
+            }
+          ]
+        },
+        {
+          "groupName": "chat",
+          "list": [
+            {
+              "path": "/link-all",
+              "title": "linkAll 会话组件"
+            }
+          ]
+        },
+        {
+          "groupName": "chart",
+          "list": [
+            {
+              "path": "/chart",
+              "title": "Chart 图表"
+            },
+            {
+              "path": "/chart-mini",
+              "title": "ChartMini 小图表"
+            },
+            {
+              "path": "/img-viewer",
+              "title": "ImgViewer 图片查看器"
+            }
+          ]
+        },
+        {
+          "groupName": "transition",
+          "list": [
+            {
+              "path": "/carousel",
+              "title": "Carousel 轮播图组件"
+            },
+            {
+              "path": "/collapse-transition",
+              "title": "CollapseTransition 动画组件"
+            },
+            {
+              "path": "/scrollbar",
+              "title": "Scrollbar 滚动条组件"
+            },
+            {
+              "path": "/back-top",
+              "title": "BackTop 回到顶部"
+            }
+          ]
+        },
+        {
+          "groupName": "Others",
+          "list": [
+            {
+              "path": "/dialog",
+              "title": "Dialog 对话框"
+            },
+            {
+              "path": "/dialog-mini",
+              "title": "DialogMini 小型弹出框"
+            },
+            {
+              "path": "/grid-dialog",
+              "title": "GridDialog 表格选择/编辑弹框"
+            },
+            {
+              "path": "/float-list",
+              "title": "FloatList 悬浮列表组件"
+            },
+            {
+              "path": "/accordion",
+              "title": "Accordion 折叠面板"
+            }
+          ]
+        },
+        {
+          "groupName": "style-class",
+          "list": [
+            {
+              "path": "/style-class",
+              "title": "StyleClass 通用类"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

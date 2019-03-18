@@ -1,0 +1,254 @@
+.znl-component-input {
+  align-items: center;
+  display: inline-block;
+  font-size: 12px;
+  position: relative;
+  // overflow: hidden;
+  .iconfont{
+    font-size: 12px;
+  }
+  .el-input{
+    width: 100%;
+  }
+  .el-input__inner {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0px;
+    font-size: 12px;
+    color: #333;
+    padding-right: 5px;
+    height: 100%!important;
+    box-sizing: border-box;
+    display: block;
+    &::placeholder {
+        color: #999;
+    }
+    &:focus {
+      border: none;
+      border-bottom: 1px solid #ee7700;
+      &+.el-input-group__append>div {
+          border-bottom: 1px solid #ee7700;
+      }
+    }
+  }
+  .el-select {
+    .el-select__tags{
+      width: 100%;
+      max-width: none!important;
+      height: 100%;
+      overflow: hidden;
+      padding-right: 20px;
+      box-sizing: border-box;
+      >span{
+        display: flex;
+        flex-wrap: nowrap;
+        margin-left: 1px;
+        width: 100%;
+        overflow: hidden;
+      }
+    }
+  }
+  .znl-input-type {
+    margin: 0px;
+    .el-input__inner{
+      width: 100%;
+    }
+    // 文本框
+    .el-textarea__inner {
+      border: 1px solid #E6E6E6;
+      &:-ms-input-placeholder {
+          font-size: 12px;
+      }
+      &:focus {
+          border: 1px solid #ee7700;
+      }
+    }
+    &.znlPrefix{
+      .el-input__inner{
+        padding-left: 25px;
+      }
+    }
+  }
+  .el-input__icon{
+    line-height: 0;
+  }
+  .el-date-editor{
+    .el-input__inner{
+      padding-left: 30px;
+    }
+  }
+  // 布局/top
+  &.top{
+    .znl-input-title{
+      float: none;
+    }
+  }
+  .el-range-input, .el-range-separator{
+    height: 20px;
+    line-height: 20px;
+  }
+  .znl-input-date{
+    display: flex;
+    align-items: center;
+    &.is-active {
+      border-color:#EE7700;
+    }
+  }
+}
+// 通用标题
+.znl-input-title {
+  font-size: 12px;
+  white-space: nowrap;
+  padding: 0;
+  display: block;
+  float: left;
+  &.isMustFill {
+      color: #EE7700;
+      font-weight: bold;
+  }
+}
+// 通用输入框
+.znl-input-type{
+  display: block;
+  width: auto;
+  .el-input{
+    height: 100%;
+  }
+}
+// 禁用
+.znl-disabled{
+  .el-input__suffix-inner{
+    .el-input__icon{
+      display: none;
+    }
+  }
+}
+// 必填
+.znl-must-fill{
+  .el-input__inner {
+    background-color: #FFF5EB;
+  }
+}
+.el-select-dropdown.is-multiple .el-select-dropdown__item.selected::after{
+  display: none;
+}
+.znl-selected-checked{
+  width: 100%;
+  display: inline-block;
+  height: 100%;
+  .el-checkbox{
+    width: 100%;
+    display: inline-block;
+    height: 100%;
+  }
+  .el-checkbox__input{
+    margin-right: 3px;
+  }
+  .el-checkbox__inner::after{
+    left: 3px;
+  }
+}
+
+.znl-input-select{
+  .el-input--suffix{
+    .el-input__suffix{
+      right: 0px;
+    }
+  }
+}
+.znl-select-tags-clear{
+  .el-tag{
+    position: relative;
+    &::after{
+      content: ',';
+      position: absolute;
+      right: -1px;
+    }
+    &:last-child{
+      &::after{
+        content: '';
+      }
+    }
+  }
+  .el-tag__close{
+    display: none;
+  }
+}
+// 多选
+.el-select-dropdown.is-multiple{
+  .el-scrollbar .el-select-dropdown__wrap .el-scrollbar__view .el-select-dropdown__item.selected{
+    background-color: #fff;
+  }
+}
+.el-select__tags{
+  width: 100%;
+  max-width: none!important;
+  >span{
+    display: flex;
+    flex-wrap: nowrap;
+    .el-tag{
+      margin: 0;
+    }
+  }
+}
+.el-scrollbar{
+  .el-checkbox__label{
+    font-size: 12px;
+  }
+}
+
+   // 带全边框
+.znl-border-input {
+  .el-input{
+    .el-input__inner {
+      border: 1px solid #E6E6E6;
+      border-radius: 4px;
+      &:focus {
+          border: 1px solid #EE7700;
+      }
+    }
+  }
+  .znl-input-date{
+    border: 1px solid #E6E6E6;
+    border-radius: 4px;
+    &.is-active {
+        border: 1px solid #EE7700;
+    }
+  }
+}
+
+.el-select .el-input .el-input__icon{
+  top: 0;
+}
+
+// 验证提示文字
+.znl-pattern-tip{
+  position: absolute;
+  z-index: 1;
+  background-color: #fff;
+  border: 1px solid #E6E6E6;
+  padding: 0 10px;
+  line-height: 25px;
+  border-radius: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .12);
+}
+// 表单验证失败
+.znl-input_authFailed{
+  .el-input__inner{
+    border-color: #ED6661;
+  }
+}
+
+// 移除HTML5 input在type="number"时的上下小箭头
+// chrome：
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none !important;
+    margin: 0; 
+}
+// Firefox：
+input[type="number"]{-moz-appearance:textfield;}

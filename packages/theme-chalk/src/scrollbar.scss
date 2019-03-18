@@ -1,0 +1,32 @@
+// scroll
+.znl-autocomplete-suggestion__wrap{
+  box-sizing: border-box;
+  overflow: auto;
+  background-color: #fff;
+}
+.znl-autocomplete-suggestion__list {
+  margin: 0;
+  padding: 0;
+}
+.znl-scrollbar__wrap{
+  overflow-x: auto;
+  margin: 0 !important;
+  height: 100%;
+}
+.znl-scrollbar {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  &:hover,
+  &:active,
+  &:focus {
+    .el-scrollbar__bar {
+      opacity: 1;
+      transition: opacity 340ms ease-out;
+    }
+  }
+}
+.znl-scrollbar__bar.is-vertical{
+  width: 6px;
+  top: 2px;
+}

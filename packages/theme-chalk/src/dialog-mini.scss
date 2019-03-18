@@ -1,0 +1,33 @@
+.znl-shade{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+}
+.znl-dialog-mini{
+  // position: absolute;
+  position: fixed;
+  border: 1px solid #DCDFE6;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.12);
+  background-color: #fff;
+  // padding: 5px 0px;
+  z-index: 999;
+  &:focus{
+    outline: none;
+  }
+}
+.znl-dialog-mini-header{
+  height: 20px;
+  position: relative;
+  .icon-close_btn{
+    // float: right;
+    // margin-top: 3px;
+    // margin-right: 3px;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    cursor: pointer;
+  }
+}

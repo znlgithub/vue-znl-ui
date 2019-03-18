@@ -1,0 +1,14 @@
+.znl-layout-multiple{
+  overflow-y: hidden;
+  // position: absolute;
+}
+.znl-layout-multiple_scroll{
+  height: 100%;
+  position: relative;
+  overflow-y: auto;  
+}
+.znl-multiple{
+  &.hide{
+    display: none;
+  }
+}

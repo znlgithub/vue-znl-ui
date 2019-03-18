@@ -1,0 +1,147 @@
+.znl-carousel {
+  // overflow-x: hidden;
+  position: relative;
+}
+.znl-carousel__container {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+.znl-carousel__arrow {
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  height: 36px;
+  width: 36px;
+  cursor: pointer;
+  transition: .3s;
+  border-radius: 50%;
+  background-color: rgba(31, 45, 61, 0.11);
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  transform: translateY(-50%);
+  text-align: center;
+  font-size: 12px;
+}
+.znl-carousel__arrow--left {
+  left: 16px;
+}
+.znl-carousel__arrow--right {
+  right: 16px;
+}
+.znl-carousel__item.is-animating {
+  transition: transform .4s ease-in-out;
+}
+.znl-carousel__item.is-breathing-light {
+  transition: opacity 1s;
+}
+.znl-carousel__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  overflow: hidden;
+  z-index: 0;
+}
+.znl-carousel__item.is-active {
+  z-index: 2
+}
+.znl-carousel__indicators {
+  position: absolute;
+  list-style: none;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+}
+.znl-carousel__indicators_vertical{
+  .znl-carousel__indicators{
+    transform: translateX(0) translateY(-50%);
+    top: 50%;
+    right: 0;
+    left: auto;
+    bottom: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .znl-carousel__indicator{
+    padding: 5px 4px;
+  }
+  .znl-carousel__button{
+    padding: 10px 2px;
+  }
+  .znl-carousel__arrow{
+    transform: translateX(-50%) translateY(0);
+    top: auto;
+    left: 50%;
+  }
+  .znl-carousel__arrow--left{
+    top: 16px;
+  }
+  .znl-carousel__arrow--right{
+    bottom: 16px;
+  }
+}
+.znl-carousel__indicator {
+  display: inline-block;
+  background-color: transparent;
+  padding: 12px 4px;
+  cursor: pointer;
+}
+.znl-carousel__button {
+  display: block;
+  opacity: 0.48;
+  width: 30px;
+  height: 2px;
+  // background-color: #fff;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  // transition: .3s;
+}
+.znl-carousel__indicators--labels .znl-carousel__button {
+  height: auto;
+  width: auto;
+  padding: 2px 18px;
+  font-size: 12px;
+}
+.znl-carousel__indicators {
+  position: absolute;
+  list-style: none;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+}
+.znl-carousel__indicator.is-active button{
+  opacity: 1;
+}
+.znl-carousel__indicators--outside {
+  bottom: 26px;
+  text-align: center;
+  position: static;
+  transform: none;
+}
+// 卡片
+.znl-carousel__item--card {
+  width: 50%;
+  transition: transform .4s ease-in-out;
+  &.is-in-stage {
+    cursor: pointer;
+    z-index: 1;
+  }
+}
+.znl-carousel__item--card.is-active {
+  z-index: 2;
+}

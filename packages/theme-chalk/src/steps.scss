@@ -1,0 +1,129 @@
+.znl-steps{
+  display: flex;
+  position: relative;
+}
+.znl-step__head{
+  position: relative;
+  width: 100%;
+  // 完成
+  &.is-finish{
+    .znl-step__icon-inner{
+      color: #fff;
+      background-color: #ED9E00;
+    }
+  }
+}
+// 线
+.znl-step__line {
+  position: absolute;
+  background-color: #F1F3F6;
+  border-top: 1px solid #E4E8EF;
+  border-bottom: 1px solid #E4E8EF;
+  box-sizing: border-box;
+  height: 10px;
+  top: 20px;
+  left: 0;
+  right: 0;
+}
+.znl-step__line-inner{
+  display: block;
+  border-style: solid;
+  border-color: #ED9E00;
+  box-sizing: border-box;
+  height: 0;
+  position: relative;
+}
+.znl-step__line-inner-in{
+  position: absolute;
+  // height: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -5px;
+  // background-color: #ED9E00;
+  z-index: 2;
+  border-style: solid;
+  border-color: #ED9E00;
+}
+// 进度条步骤文字/图标
+.znl-step__icon{
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  position: relative;
+  z-index: 1;
+  color: #67707B;
+  display: inline-block;
+  align-items: center;
+  font-size: 18px;
+  text-align: center;
+  background-color: #F1F3F6;
+  border-radius: 50%;  
+  &.is-text{
+    border-radius: 50%;
+    border: 1px solid #E4E8EF;
+  }
+}
+.znl-step__icon-inner{
+  display: inline-block;
+  user-select: none;
+  text-align: center;
+  font-weight: 700;
+  line-height: 1;
+  color: inherit;
+  width: 38px;
+  height: 38px;
+  border: 1px solid #E4E8EF;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 38px;
+  background-color: #fff;
+}
+// 标题
+.znl-step__title{
+  color: #b3b3b3;
+  font-size: 12px;
+}
+// 描述
+.znl-step__description{
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
+}
+// 内容
+.znl-step__content{
+  position: absolute;
+  left: 0;
+}
+// 单个进度条
+.znl-step{
+  &.is-flex{
+    flex-basis: auto !important;
+  }
+  &.is-center{
+    .znl-step__head{
+      text-align: center;
+    }
+    .znl-step__line{
+      left: 50%;
+      right: -50%;
+    }
+    .znl-step__main, .znl-step__header{
+      text-align: center;
+    }
+    .znl-step__header{
+      color: #666;
+      &.is-finish{
+        color: #000;
+      }
+    }
+    .znl-step__description{
+      padding-left: 20%;
+      padding-right: 20%;
+    }
+  }
+  &:last-child{
+    .znl-step__line{
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,386 @@
+.znl-upload{
+  .bold-span{
+    font-weight: 900;
+  }
+  .header{
+    height: 40px;
+    line-height: 40px;
+    background-color: #F3F8FE;
+    padding: 0 20px;
+    position: relative;
+    margin-bottom: 20px;
+    span{
+      font-size: 16px;
+      color: #4D4D4D;
+      display: inline-block;
+      letter-spacing: 0;
+      font-weight: bold;
+    }
+  }
+  .subhead{
+    font-size: 12px;
+    color: #666666;
+    padding-left: 20px;
+  }
+  .upload-body-wrapper{
+    margin-top: 20px;
+    padding: 0 20px;
+  }
+  .upload_step_header{
+    font-size: 20px;
+    color: #4D4D4D;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #D8DDE8;
+  }
+  .upload_step_row{
+    list-style: none;
+    margin-left: 20px;
+    font-size: 14px;
+    margin-top: 20px;
+    width: 100%;
+    color: #666;
+    margin-bottom: 20px;
+    &::before{
+      content: '';
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background: #EE7700;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    a{
+      color: #28753F;
+      text-decoration: underline;
+    }
+  }
+  .upload_step_textbutton{
+    color: #EE7700;
+    margin-left: 4px;
+    cursor: pointer;
+  }
+  .upload_step_selete{
+    margin: 20px 0;
+    .el-radio.is-bordered{
+      font-size: 14px;
+      color: #808080;
+      border: 1px solid #E6E6E6;
+      padding: 12px 6px 0 0;
+      height: 42px;
+      // box-sizing: border-box;
+      &.is-checked{
+        border-color: transparent;
+        // border: none;
+        position: relative;
+        &::after{
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 100%;
+          height: 100%;
+          // background: url('/static/imgs/upload-slect-wrap_pre.png') no-repeat;
+        }
+      }
+    }
+    .el-radio__input{
+      display: none;
+    }
+    .el-radio__label{
+      color: #808080;
+    }
+  }
+  .upload_step_selete_UploadMode{
+    padding: 10px;
+    .el-radio{
+      margin: 5px 0;
+      width: 100%;
+    }
+    .el-radio__inner{
+      border-radius: 3px;
+      width: 10px;
+      height: 10px;
+    }
+    .el-radio__input.is-checked .el-radio__inner{
+      border-color: #EE7700;
+      background: #EE7700;
+    }
+    .el-radio__input.is-checked + .el-radio__label{
+      color: #606266;
+    }
+    .el-radio + .el-radio{
+      margin-left: 0;
+    }
+    .el-radio.is-bordered.is-checked{
+      border: none;
+    }
+  }
+  .upload_step_file{
+    margin-top: 20px;
+    margin-left: 19px;
+    position: relative;
+    .file_container{
+      width: 380px;
+      height: 36px;
+      line-height: 36px;
+      display: inline-block;
+      position: relative;
+      vertical-align: top;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      &::before{
+        content: '';
+        position: absolute;
+        top: 2px;
+        right: 4px;
+        width: 370px;
+        height: 30px;
+        border: 1px dashed #ccc;
+        cursor: pointer;
+      }
+      .iconfont{
+        margin-left: 10px;
+        position: absolute;
+        top: 0px;
+      }
+      .fileinput_container{
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        height: 30px;
+        line-height: 30px;
+        overflow: hidden;
+        top: 3px;
+        &>span{
+          padding-left: 35px;
+        }
+      }
+      #fileId{
+        position: absolute;
+        opacity: 0;
+        // left: -70px;
+        // top: 3px;
+        height: 100%;
+        outline: none;
+        width: 100%;
+        color: #666;
+      }
+    }
+  }
+  .upload_step_text{
+    overflow: hidden;
+    padding: 3px 0;
+    vertical-align: middle;
+    width: 324px;
+    display: inline-block;
+    position: relative;
+    color: #999;
+    border: none;
+  }
+  .upload_btn_main{
+    border: 1px solid #ED9E00;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #ED9E00;
+    width: 94px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    display: inline-block;
+    outline: none;
+    // position: absolute;
+    // right: 368px;
+    cursor: pointer;
+    background-color: #fff;
+    margin-left: 10px;
+    margin-top: 2px;
+    &:hover{
+      background-color: #ED9E00;
+      color: #fff;
+    }
+  }
+  .upload-tip{
+    font-size: 12px;
+    color: #2A2A2A;
+    padding-left: 19px;
+    padding-top: 10px;
+    span{
+      color: #EE7700;
+    }
+  }
+  .upload-footer-wrapper{
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+  .uplode_submit_btn{
+    background-color: #ccc;
+    border-radius: 30px;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+    &:hover{
+      background-color: #ccc;
+    }
+    &.alreadyUploaded{
+      background: #ED9E00;
+      &:hover{
+        background-color: #ee7700;
+      }      
+    }
+  }
+  .filteringRules{
+    .znl-dialog{
+      .el-dialog__body{
+        padding: 0 15px;
+      }
+    }
+  }
+  // bom样式
+  .upload {margin-top: 20px;}
+  .mt20{margin-top: 20px;}
+
+  .Bom_myupload_fromalert_row {
+    display: inline-block;
+    vertical-align: top;
+  }
+  .Bom_myupload_fromalert_row li span {
+    display: table-cell;
+    color: #333;
+    text-align: left;
+    padding-left: 30px;
+    font-size: 12px;
+    overflow: hidden;
+  }
+  .Bom_myupload_fromalert_row li {
+    border-bottom: 1px solid #DFE3E9;
+  }
+  .bom_Stock_fromalert_row li span:nth-child(1) {
+    width: 130px;
+    height: 50px;
+    line-height: 50px;
+  }
+  .Bom_myupload_fromalert_row li span:first-child {
+    width: 130px;
+    height: 50px;
+    line-height: 50px;
+  }
+  .Bom_myupload_fromalert_row li span:nth-child(2) {
+    width: 130px;
+    height: 50px;
+    line-height: 50px;
+  }
+  .Bom_myupload_fromalert_row li span:first-child + span {
+    width: 130px;
+    height: 50px;
+    line-height: 50px;
+  }
+  .Bom_myupload_fromalert_row li span:nth-child(3) {
+    width: 480px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+  }
+  .Bom_myupload_fromalert_row li span:first-child + span + span {
+    width: 480px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+  }
+  .Bom_myupload_fromalert_row li:nth-child(1) span {
+    font-size: 14px;
+    font-weight: bold;
+    color: #696969;
+  }
+  .Bom_myupload_fromalert_row li:first-child span {
+    font-size: 14px;
+    font-weight: bold;
+    color: #696969;
+  }
+  .Bom_myupload_fromalert_row li:nth-child(8) span {
+    border: none;
+  }
+  .Bom_myupload_fromalert_row li:first-child + li + li + li + li + li + li + li {
+    border: none;
+  }
+  .rule-warn{
+    color: #EE7700;
+    text-align: left;
+    float: left;
+    font-size: 12px;
+  }
+}
+
+.znl-upload-pic{
+  display: inline-block;
+  padding: 20px 0;
+  position: relative;
+}
+
+.znl-upload-pic_header{
+  color: #666;
+  padding-bottom: 10px;
+}
+.znl-upload-pic_body{
+    border: 1px solid #dfe3e9;
+    border-radius: 4px;
+    font-size: 0;
+    width: 280px;
+    height: 140px;
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 10px;
+    background-color: #fff;
+  .img-container{
+    display: inline-block;
+    // background: url('/static/imgs/bom_bg.png');
+    background-repeat: no-repeat;
+    background-size: 802px 430px;
+    background-position: 0 -272px;
+    width: 252px;
+    height: 113px;
+    margin-top: 14px;
+  }
+  img{
+    margin-top: 14px;
+  }
+
+}
+.znl-upload-pic_footer{
+  .fileinput_container{
+    position: relative;
+    height: 30px;
+    .fileId{
+      opacity: 0;
+    }
+    .znl-button{
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    .explain{
+      position: absolute;
+      left: 100px;
+      top: 0;
+      span{
+        display: inline-block;
+        font-size: 12px;
+        color: #808080;
+        line-height: 16px;
+      }
+    }
+  }
+
+  .files-count{
+    font-size: 12px;
+    color: #808080;
+    line-height: 16px;
+    padding: 0 0 3px;
+  }
+}

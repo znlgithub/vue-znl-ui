@@ -1,0 +1,192 @@
+// 单独覆盖element样式
+
+// input
+.el-input__suffix{
+  cursor: pointer;
+  // display: none;
+  align-items: center;
+}
+.el-input__prefix{
+  cursor: pointer;
+  // display: none;
+  display: flex;
+  align-items: center;
+}
+.el-select-dropdown__item.selected{
+  color: #fff;
+}
+.el-input--prefix .el-input__inner{
+  padding-left: 5px;
+}
+.el-input__inner{
+  padding: 0 5px;
+}
+
+// date-picker
+.el-date-picker {
+  width: 322px;
+  // transform: translateX(150px);
+}
+
+// selecte
+.el-scrollbar__wrap{
+  overflow: auto;
+}
+
+.el-table td, .el-table th{
+  padding: 0;
+}
+.footer{
+  .el-pager li.active{
+    color: #fff;
+    background-color: #999;
+  }
+  .el-pager li{
+    color: #666;
+    font-weight: 100;
+  }
+}
+.el-date-table td.in-range {
+  background-color: #fff;
+}
+// 双日期
+.el-picker-panel.el-date-range-picker{
+  width: 520px;
+  .el-picker-panel__body-wrapper{
+    .el-picker-panel__body{
+      .el-picker-panel__content{
+        width: 260px;
+        padding: 0;
+        .el-date-table__row{
+          td{
+            padding: 2px 0;
+          }
+        }
+      }
+    }
+  }
+  .el-date-table th{
+    padding: 0 5px;
+  }
+}
+.el-picker-panel{
+  width: 292px;
+  .el-date-picker__header, .el-picker-panel__content{
+    margin: 0;
+  }
+  .el-date-table td{
+    padding: 2px 0;
+  }
+  .el-date-table th{
+    padding: 0 5px;
+  }
+  .el-date-table tr td.current:not(.disabled), .el-date-table td.end-date, .el-date-table tr td.start-date{
+    background-color: #fff !important;
+  }
+}
+
+.el-select-dropdown__item{
+  padding: 0 5px;
+  min-width: 50px;
+}
+.el-checkbox__label{
+  padding-left: 2px;
+}
+
+.el-table{
+  display: block;
+  // flex-direction: column;
+  // .el-table__body-wrapper{
+  //   flex: 1;
+  // }
+}
+.el-checkbox__inner{
+  height: 13px;
+  width: 13px;
+}
+.el-checkbox{
+  .el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner{
+    background-color: #ff7700;
+    border-color: rgb(228, 107, 1);
+  }
+}
+.el-button.nounderline{
+  text-decoration: none!important;
+}
+.el-popper[x-placement^=bottom]{
+  margin-top: 0;
+  min-width: 90px;
+}
+.el-checkbox__input.is-checked+.el-checkbox__label {
+  color: #ee7700;
+}
+.el-table th>.cell{
+  background-color: #fff;
+}
+.el-dropdown-menu{
+  padding: 0;
+  .el-dropdown-menu__item{
+    font-size: 12px;
+    padding: 0 10px;
+  }
+}
+.el-table--enable-row-transition .el-table__body td{
+  transition: none;
+}
+.el-table__body tr.current-row > td{
+  background-color: #D1F0FF;
+}
+.el-table__body tr.hover-row> td,
+.el-table__body tr.hover-row.current-row> td{
+  background-color: #F0F0F0;
+}
+.el-table tbody{
+  font-size: 12px;
+}
+
+.el-table__fixed-footer-wrapper{
+  height: 25px;
+  line-height: 25px;
+  // .table-selection{
+  //   .cell{
+  //     top: -10px;
+  //   }
+  // }
+}
+.el-table__body-wrapper{
+  overflow-y: auto;
+}
+.el-select .el-tag__close.el-icon-close{
+  right: -2px;
+  top: -1px;
+}
+.el-select .el-tag{
+  background-color: transparent;
+}
+.el-tag--small{
+  padding: 0 3px;
+  height: 20px;
+  line-height: 20px;
+}
+//选择框
+.el-select-dropdown{
+  margin-top: 1px;
+  margin-bottom: 0;
+  &.is-multiple{
+    margin-top: 1px;    
+  }
+  .el-scrollbar{
+    .el-select-dropdown__wrap{
+      margin-bottom: 0!important;
+    }
+  }
+  .popper__arrow{
+    display: none;
+  }
+}
+.el-table--border th, .el-table--border td{
+  border-right: 1px solid #d8d8d8;
+}
+.el-table th.is-leaf, .el-table td{
+  border-bottom: 1px solid #d8d8d8;
+}

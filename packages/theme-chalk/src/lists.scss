@@ -1,0 +1,321 @@
+.znl-lists{
+  text-align: left;
+  overflow: hidden;
+  font-size: 12px;
+  color: #212121;
+  display: flex;
+  flex-direction: column;
+  // display: table;
+  &.animation{
+    .znl-refresh-loading{
+      animation: 1s rainbow infinite;
+      background-color: #1BB934;
+      color: #fff!important;
+      border-radius: 50%!important;
+      height: 20px;
+      width: 20px;
+      line-height: 20px;
+    }
+    &>.el-loading-mask{
+      &>.el-loading-spinner{
+        background-color: transparent;
+        box-shadow: none;
+        &>.circular{
+          display: none;
+        }
+      }
+    }
+  }
+  li{
+    overflow: hidden;
+    margin: 0;
+    padding: 0 5px;
+    overflow: hidden;
+  }
+  .list-header{
+    position: relative;
+  }
+  .lists-empty-data{
+    text-align: center;
+    height: 50px;
+    font-size: 14px;
+    color: #999;
+    // border-top: 1px solid #D8D8D8;
+    border-bottom: 1px solid #D8D8D8;
+    line-height: 50px;
+  }
+  .znl-lists-wrapper{
+    flex: 1;
+    overflow-y: hidden;
+    overflow-x: auto;
+  }
+  .znl-list-header, .znl-list-body{
+    .body-yul, .header-yul{
+      display: table;
+    }
+  }
+  .znl-list-header.erp_list_header{
+    ul.header-yul{
+      line-height: 8px;
+      // white-space:nowrap;
+      // display: table-row;
+      margin: 0;
+      &>li{
+        height: 28px;
+        line-height: 28px;
+        padding: 0;
+        background-color: #F5F5F5;
+        color: #000;
+        display: block;
+        .header-xul{
+          display: flex;
+          .list-search{
+            background-color: #fff;
+            .cell{
+              input{
+                width: 100%;
+                outline: none;
+                border: 1px solid #E6E6E6;
+                border-radius: 2px;
+                height: 20px;
+                line-height: 20px;
+                padding: 0 5px;
+                box-sizing: border-box;
+                font-size: 12px;
+                background-color: transparent;
+              }
+            }
+          }
+          .list-header{
+            text-align: left;
+            box-sizing: border-box;
+            &.center{
+              text-align: center;
+            }
+            &.right{
+              text-align: right;
+            }
+          }
+        }
+      }
+    }
+  }
+  .znl-list-header.bomai_list_header{
+    .header-yul>li{
+      display: block;
+      padding: 0;
+    }
+    .bomai_header{
+      border-bottom: 1px solid #dfe3e9;
+      display: flex;
+      &>li{
+        box-sizing: border-box;
+        .cell{
+          font-size: 12px;
+          color: #666;
+          font-weight: bold;
+        }
+      }
+    }
+    .select{
+      width: 50px;
+      box-sizing: border-box;
+      .cell{
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+  .znl-list-body{
+    display: inline-block;
+    overflow-y: auto;
+    overflow-x: hidden;
+    ul.body-yul{
+      white-space:nowrap;
+      &.listTip{
+        .znl-lists-row{
+          cursor: pointer;
+        }
+      }
+      // display: table-row;
+    }
+  }
+  .znl-lists-row{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    display: block;
+    // 通用样式
+    .checked-column{
+      .cell{
+        text-align: center;
+      }
+    }
+    // erp样式
+    &.erp_list_row{
+      height: 28px;
+      line-height: 28px;
+      ul.body-xul{
+        display: flex;
+        height: 28px;
+        line-height: 10px;
+        margin: 0;
+        padding: 0;
+        // display: table-row;
+        li{
+          height: 28px;
+          line-height: 28px;
+          box-sizing: border-box;
+        }
+      }
+    }
+    &.erp_list_row:nth-child(odd) {
+      background-color: #FFF;
+    }
+    &.erp_list_row:nth-child(even) {
+      background-color: #F5F5F5;
+    }
+    // bomai样式
+    &.bomai_list_row{
+      border-bottom: 1px solid #DFE3E9;
+      .body-xul{
+        .list-col{
+          padding: 10px 5px;
+          height: 100%;
+          box-sizing: border-box;
+        }
+        display: flex;
+        align-items: center;
+      }
+      .header-xul{
+        display: flex;
+        align-items: center;
+      }
+      .select{
+        width: 50px;
+        box-sizing: border-box;
+        .cell{
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+    &.erp_list_row.current-row, &.bomai_list_row.current-row{
+      background-color: #D1F0FF;
+    }
+  }
+}
+.znl-list-footer.erp_list_footer{
+  background-color: #F5F8FA;
+  display: flex;
+  .znl-pagination{
+    button{
+      background-color: transparent;
+    }
+    .el-pager{
+      li {
+        color: #666;
+        text-decoration: none;
+        background-color: #F5F8FA;
+        background-color: transparent;
+        &.active{
+          // background-color: #fff;
+          background-color: transparent;
+          border: none;
+          color: #000;
+          text-decoration: none;  
+          line-height: 25px;
+        }
+      }
+    }
+  }
+  &.left{
+    justify-content: flex-start;
+  }
+  &.center{
+    justify-content: center;
+  }
+  &.right{
+    justify-content: flex-end;
+  }
+}
+
+.znl-lists_header-line{
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  background-color: transparent;
+  top: 0;
+  right: 0;
+  cursor: col-resize;
+}
+
+.znl-list-title-row{
+  position: relative;
+  padding: 0 10px;
+  .rightbtns{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    height: 28px;
+    align-items: center;
+  }
+  .pagination-slot{
+    position: relative;
+    span{
+      min-width: 0;
+    }
+    .jumper-span{
+      position: relative;
+      font-size: 12px!important;
+      input{
+        width: 24px;
+        height: 16px;
+        position: absolute;
+        right: 0;
+        font-size: 12px;
+        font-weight: 600;
+        display: none;
+        &:focus{
+          outline: none;
+        }
+      }
+    }
+    &:hover{
+      input{
+        display: block;
+      }
+    }
+  }
+  .znl-icons,.selectedReminder{
+    line-height: 20px;
+    height: 20px;
+    text-align: center;
+  }
+  .znl-icons{
+    color: gray;
+    width: 20px;
+    margin-left: 3px;
+    .iconfont {
+      font-size: 14px;
+    }
+  }
+  .selectedReminder{
+    color: #999;
+  }
+}
+
+.znl-list-footer.bomai_list_footer{
+  display: flex;
+  align-items: center;
+  &.left{
+    justify-content: flex-start;
+  }
+  &.center{
+    justify-content: center;
+  }
+  &.right{
+    justify-content: flex-end;
+  }
+}

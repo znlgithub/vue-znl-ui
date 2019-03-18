@@ -1,0 +1,23 @@
+.znl-back-top{
+  background-color: #fff;
+  position: fixed;
+  right: 100px;
+  bottom: 100px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: .3s;
+  box-shadow: 0 0 6px rgba(0,0,0, .12);
+  z-index: 10;
+  text-align: center;
+  &.hide{
+    display: none;
+  }
+}
+.znl-back-top-fade-enter,
+.znl-back-top-fade-leave-active {
+  transform: translateY(-30px);
+  opacity: 0;
+}

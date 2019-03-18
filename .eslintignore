@@ -1,0 +1,7 @@
+build
+test
+examples
+dist
+node_modules
+*.js
+*.vue

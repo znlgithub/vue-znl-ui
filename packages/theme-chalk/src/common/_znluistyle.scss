@@ -1,0 +1,107 @@
+.el-autocomplete-suggestion{
+  li.znl-selected-search{
+    // width: 100%;
+    font-size: 12px;
+    overflow: initial;
+    border-bottom: 1px solid #d8d8d8;
+    &:nth-child(2){
+      // border-bottom: 3px solid #d8d8d8;
+      .znl-list-header{
+        display: block;
+        border-bottom: 1px solid #d8d8d8;
+      }
+    }
+    .znl-list-header{
+      display: none;
+    }
+    .znl-list{
+      margin-right: 5px;
+    }
+  }
+}
+// 日期选择框
+.el-picker-panel{
+  margin: 0;
+  margin-top: 1px!important;
+  .el-picker-panel__body-wrapper{
+    .el-date-table tr{
+      td.start-date, td.end-date{
+        background-color: transparent!important;
+      }
+    }
+    .el-picker-panel__body{
+      .el-date-picker__header{
+        margin-bottom: 0;
+      }
+      .el-picker-panel__content{
+        margin-top: 0;
+      }
+    }
+  }
+  .popper__arrow{
+    display: none;
+  }
+}
+
+
+
+// tip提示层
+.znl-title-tip{
+  .popper__arrow{
+
+  }
+}
+// 头部、编辑选择下拉框
+.header-selected.el-select-dropdown, .editSelected{
+  margin: 0;
+  border-radius: 0;
+  .el-scrollbar{
+    .el-select-dropdown__wrap{
+      margin-bottom: 0!important;
+    }
+  }
+  // 箭头隐藏
+  .popper__arrow{
+    display: none;
+  }
+}
+// 头部日期选择框
+.header-datepicker{
+  margin: 0!important;
+  .el-date-range-picker__header{
+    div{
+      font-size: 14px;
+    }
+  }
+  .popper__arrow{
+    display: none;
+  }
+}
+// 编辑选择框
+.znl-editinput-dropdown.el-select-dropdown{
+  margin: 0;
+  margin-top: 2px;
+  min-width: 30px;
+  .el-scrollbar{
+    .el-select-dropdown__wrap{
+      margin-bottom: 0!important;
+    }
+  }
+  .popper__arrow{
+    display: none;
+  }
+}
+
+.gutter {
+  display: none;
+}
+#pane-cellColor{
+  // color: red;
+  .el-col{
+    margin-top: 5px;
+    height: 30px;
+    .el-color-picker{
+      height: 30px;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.znl-Imgviewer {
+  .znl-imgviewer-img {
+      // height: 100%;
+      width: 100%;
+      display: block;
+  }
+  .znl-carousel__container{
+    height: 500px;
+  }
+  .znl-carousel__item{
+    overflow-y: auto;
+  }
+}

@@ -1,0 +1,15 @@
+.znl-float-list{
+  display: inline-block;
+}
+.znl-float-wrapper{
+  position: fixed;
+  top: 0;
+  left: 0;
+  &.wj-right-menu{
+    .menu-item{
+      color: #333;
+      padding: 0 5px 0 10px;
+      text-align: left;
+    }
+  }
+}

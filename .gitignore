@@ -1,0 +1,16 @@
+.DS_Store
+node_modules/
+*.log
+./App.vue
+test/
+dist/
+examples/
+# Editor directories and files
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+.vscode/
+lib/
+lib
